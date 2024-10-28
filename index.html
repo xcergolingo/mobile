@@ -7,11 +7,11 @@
     <meta charset="utf-8" />
     <meta property="twitter:card" content="summary_large_image" />
 
-    <!--
+    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    -->
+    
     <!-- Javascript -->
     <script src="assets/js/jquery-3.3.1.min.js"></script>
     <script src="assets/js/jquery-migrate-3.0.0.min.js"></script>
@@ -21,6 +21,7 @@
     <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/waypoints.min.js"></script>
     <script src="assets/js/scripts.js"></script>
+   
     
     <style data-tag="reset-style-sheet">
       html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
@@ -80,6 +81,7 @@
         <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
         <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
   </head>
+  
   <body>
     <div>
       <link href="./index.css" rel="stylesheet" />
@@ -93,13 +95,43 @@
                 src="public/site-logo.png"
                 class="home-image"
               />
+              
             </div>
-            <div class="home-menu" id="main-menu">
-                <span class="home-text">Home2</span>
-                <a href="#features" class="home-link">Features</a>
-                <a href="#testimonies" class="home-link01">Testimony</a>
-                <a href="#about" class="home-link02">About</a>
+
+      <!--NAVIGATION BAR-->
+            <div>
+              <nav> 
+                <ul class="sidebar">
+                  <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="#home-features1">Features</a></li>
+                  <li><a href="#testimonies">Testimonies</a></li>
+                  <li><a href="about.html">About</a></li>
+                  
+                </ul>
+  
+                <ul>
+                  <li class="hideOnMobile"><a href="index.html">Home</a></li>
+                  <li class="hideOnMobile"><a href="#home-features1">Features</a></li>
+                  <li class="hideOnMobile"><a href="#testimonies">Testimonies</a></li>
+                  <li class="hideOnMobile"><a href="about.html">About</a></li>
+                  <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#80080"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+  
+                </ul>
+              </nav>
             </div>
+
+            
+          
+            
+            <!-- OLD NAV CODE
+            <div class="home-menu">
+              <span class="home-text">Home</span>
+              <a href="#features" class="home-link">Features</a>
+              <a href="#testimonies" class="home-link01">Testimony</a>
+              <a href="#about" class="home-link02">About</a>
+            </div>
+          -->
             <div class="home-container01">
               <div class="store-banner-store-banner">
                 <img
@@ -114,7 +146,9 @@
                 />
               </div>
             </div>
-            <!--<div data-role="BurgerMenu" class="home-burger-menu">
+          
+            <!-- OLD BURGER MENU CODE
+            <div data-role="BurgerMenu" class="home-burger-menu">
               <svg viewBox="0 0 1024 1024" class="home-menu1">
                 <path
                   d="M810.667 725.333h-597.333c-47.061 0-85.333 38.272-85.333 85.333s38.272 85.333 85.333 85.333h597.333c47.061 0 85.333-38.272 85.333-85.333s-38.272-85.333-85.333-85.333z"
@@ -126,7 +160,8 @@
                   d="M810.667 128h-597.333c-47.061 0-85.333 38.272-85.333 85.333s38.272 85.333 85.333 85.333h597.333c47.061 0 85.333-38.272 85.333-85.333s-38.272-85.333-85.333-85.333z"
                 ></path>
               </svg>
-            </div> -->
+            </div>
+          -->
           </header>
           <div data-role="MobileMenu" class="home-mobile-menu">
             <div class="home-top">
@@ -233,12 +268,10 @@
                 <br />
                 <span>Language Learning App</span>
               </h1>
-              <div class="primary-button-container">
-                <a href="https://d2ewi6iv2iejo8.cloudfront.net/golingo-trailer.mp4" target="_blank">
-                  <button class="primary-button-button MediumLabel button">
-                    <span>Get Started</span>
-                  </button>
-                </a>
+              <div type="button" onclick="location.href='about.html'" class="primary-button-container">
+                <button class="primary-button-button MediumLabel button">
+                  <span>Get Started</span>
+                </button>
               </div>
             </div>
             <img
@@ -270,111 +303,221 @@
           <div class="home-divider1"></div>
         </div>
 
-        <div id="features" class="home-features">
-          <h2 class="Headline2 home-text11">
-            Mastering Languages with GoLingo
-          </h2>
-          <span class="home-text12">
-            Dive into a world where sharing meets learning, powered by
+      <!-- GoLingo Features and Videos -->
+     <div id="features" class="home-features">
+      <h2 class="Headline2 home-text11">
+         Mastering Languages with Golingo
+        </h2>
+        <span class="home-text12">
+          Dive into a world where sharing meets learning, powered by
             cutting-edge AI to ensure you speak with confidence and cultural
-            understanding.
+            understanding. 
           </span>
-          <div class="home-features1">
-            <div class="feature-card-container">
-              <img alt="image" src="public/01.svg" class="feature-card-image" />
-              <h5 class="feature-card-text Headline5">
-                <span>Custom Teaching & Learning</span>
-              </h5>
-              <span class="feature-card-text1">
-                <span>
-                    Tailor your studies to personal interests and goals by creating your own contents with the help of the AI.
+          
+          <div class="home-features1" id="home-features1">
+         <div class="feature-card-container">
+          <img alt="image" src="public/01.svg" class="feature-card-image" />
+           <h5 class="feature-card-text Headline5">
+            <span>Custom Teaching & Learning</span>
+            </h5>
+            <span class="feature-card-text1">
+             <span>
+              Tailor your studies to personal interests and goals by creating your own contents with the help of the AI.
+              </span>
+              </span>
+             <div class="feature-video-container">
+              <div class="wrapper">
+                <div class="wrapper-holder">
+                  <img id="slide-1" src="carousel videos/ai_sentence_generation_cover.png" />
+                  <video id="slide-2" controls autoplay muted >
+                    <source src = "carousel videos/ai_sentence_generation_video1.mp4"
+                    type = "video/mp4" /> 
+                  </video>
+                  <video id="slide-3" controls autoplay muted>
+                    <source src = "carousel videos/ai_sentence_generation_video2.mp4"
+                    type = "video/mp4" /> 
+                  </video>
+                </div>
+              </div>
+              <div class="slider-nav">
+                <a href="#slide-1"></a>
+                <a href="#slide-2"></a>
+                <a href="#slide-3"></a> 
+              </div>
+             </div>
+            </div>
+            
+
+              <div class="feature-card-container">
+                <img alt="image" src="public/04.svg" class="feature-card-image" />
+                <h5 class="feature-card-text Headline5">
+                  <span>Smart Sharing</span>
+                </h5>
+                <span class="feature-card-text1">
+                  <span>Exchange learning contents and language insights with peers and online.</span>
                 </span>
-              </span>
-              
-              <!-- Top content -->
-          <div class="top-content">
-              <div class="container">
-
+                <div class="feature-video-container">
+                  <div class="wrapper">
+                    <div class="wrapper-holder">
+                      <img id="slide-4" src="carousel videos/smart_sharing_cover.png" />
+                      <video id="slide-5" controls autoplay muted>
+                        <source src = "carousel videos/smart_sharing_video1.mp4"
+                        type = "video/mp4" /> 
+                      </video>
+                      <video id="slide-6" controls autoplay muted>
+                        <source src = "carousel videos/smart_sharing_video2.mp4"
+                        type = "video/mp4" /> 
+                      </video>
+                    </div>
+                  </div>
+                  <div class="slider-nav">
+                    <a href="#slide-4"></a>
+                    <a href="#slide-5"></a>
+                    <a href="#slide-6"></a> 
+                  </div>
+                 </div>
               </div>
-          </div>
-          <break>
-          <!-- End Top content -->
-            </div>
-            <div class="feature-card-container">
-              <img alt="image" src="public/04.svg" class="feature-card-image" />
-              <h5 class="feature-card-text Headline5">
-                <span>Smart Sharing</span>
-              </h5>
-              <span class="feature-card-text1">
-                <span>Exchange learning contents and language insights with peers and online.</span>
-              </span>
-              <!-- Top content -->
-          <div class="top-content">
-              <div class="container">
 
-              </div>
-          </div>
-          <!-- End Top content -->
-            </div>
-            <div class="feature-card-container">
-              <img alt="image" src="public/02.svg" class="feature-card-image" />
-              <h5 class="feature-card-text Headline5">
-                <span>Grammar Genius</span>
-              </h5>
-              <span class="feature-card-text1">
-                <span>AI-driven tools perfect your sentence structures and understand word contextual meaning.</span>
-              </span>
-              <!-- Top content -->
-          <div class="top-content">
-              <div class="container">
+                <div class="feature-card-container">
+                  <img alt="image" src="public/02.svg" class="feature-card-image" />
+                  <h5 class="feature-card-text Headline5">
+                    <span>Custom Content Organization</span>
+                  </h5>
+                  <span class="feature-card-text1">
+                    <span>Take charge of your learning! Create, categorize, and arrange your vocabulary, phrases, and lessons in a way that makes sense to you.</span>
+                  </span>
+                  <div class="feature-video-container">
+                    <div class="wrapper">
+                      <div class="wrapper-holder">
+                        <img id="slide-7" src="carousel videos/custom_content_organization_cover.png" />
+                        <video id="slide-8" controls autoplay muted>
+                          <source src = "carousel videos/custom_content_organization_video1.mp4"
+                          type = "video/mp4" /> 
+                        </video>
+                        <video id="slide-9" controls autoplay muted>
+                          <source src = "carousel videos/custom_content_organization_video2.mp4"
+                          type = "video/mp4" /> 
+                        </video>
+                        <video id="slide-10" controls autoplay muted>
+                          <source src = "carousel videos/custom_content_organzation_video3.mp4"
+                          type = "video/mp4" /> 
+                        </video>
+                      </div>
+                    </div>
+                    <div class="slider-nav">
+                      <a href="#slide-7"></a>
+                      <a href="#slide-8"></a>
+                      <a href="#slide-9"></a>
+                      <a href="#slide-10"></a>  
+                    </div>
+                   </div>
+                </div>
 
-              </div>
-          </div>
-          <!-- End Top content -->
-            </div>
-            <div class="feature-card-container">
-              <img alt="image" src="public/03.svg" class="feature-card-image" />
-              <h5 class="feature-card-text Headline5">
-                <span>Interactive Interface</span>
-              </h5>
-              <span class="feature-card-text1">
-                <span>Auto play to make the learning easy and educational games based on your custom learning to make fun.</span>
-              </span>
-              <!-- Top content -->
-          <div class="top-content">
-              <div class="container">
+                  <div class="feature-card-container">
+                    <img alt="image" src="public/03.svg" class="feature-card-image" />
+                    <h5 class="feature-card-text Headline5">
+                      <span>Interactive Games</span>
+                    </h5>
+                    <span class="feature-card-text1">
+                      <span>Dive into a world of interactive games that test your vocabulary, grammar, and pronunciation skills.</span>
+                    </span>
+                    <div class="feature-video-container">
+                      <div class="wrapper">
+                        <div class="wrapper-holder">
+                          <img id="slide-11" src="carousel videos/interactive_games_cover.png" />
+                          <video id="slide-12" controls autoplay muted >
+                            <source src = "carousel videos/interactive_games_video1.mp4"
+                            type = "video/mp4" /> 
+                          </video>
+                          <video id="slide-13" controls autoplay muted>
+                            <source src = "carousel videos/interactive_games_video2.mp4"
+                            type = "video/mp4" /> 
+                          </video>
+                          <video id="slide-14" controls autoplay muted>
+                            <source src = "carousel videos/interactive_games_video3.mp4"
+                            type = "video/mp4" /> 
+                          </video>
+                          <video id="slide-15" controls autoplay muted>
+                            <source src = "carousel videos/interactive_games_video4.mp4"
+                            type = "video/mp4" /> 
+                          </video>
+                          <video id="slide-16" controls autoplay muted>
+                            <source src = "carousel videos/interactive_games_video5.mp4"
+                            type = "video/mp4" /> 
+                          </video>
+                          <video id="slide-17" controls autoplay muted>
+                            <source src = "carousel videos/interactive_games_video6.mp4"
+                            type = "video/mp4" /> 
+                          </video>
+                        </div>
+                      </div>
+                      <div class="slider-nav">
+                        <a href="#slide-11"></a>
+                        <a href="#slide-12"></a>
+                        <a href="#slide-13"></a>
+                        <a href="#slide-15"></a> 
+                        <a href="#slide-16"></a>
+                        <a href="#slide-17"></a> 
+                      </div>
+                     </div>
+                    </div>
+                
+                   <div class="feature-card-container">
+                        <img alt="image" src="public/05.svg" class="feature-card-image" />
+                        <h5 class="feature-card-text Headline5">
+                          <span>Progress Tracking</span>
+                        </h5>
+                        <span class="feature-card-text1">
+                          <span>Monitor your language milestones and achievements.</span>
+                        </span>
+                        <div class="feature-video-container">
+                          <div class="wrapper">
+                            <div class="wrapper-holder">
+                              <img id="slide-18" src="carousel videos/progress_tracking_cover.png" />
+                              <video id="slide-19" controls autoplay muted>
+                                <source src = "carousel videos/progress_tracking_video1.mp4"
+                                type = "video/mp4" /> 
+                              </video>
+                            </div>
+                          </div>
+                          <div class="slider-nav">
+                            <a href="#slide-18"></a>
+                            <a href="#slide-19"></a>
+                          </div>
+                         </div>
+                        </div>
 
-              </div>
+                      <div class="feature-card-container">
+                            <img alt="image" src="public/06.svg" class="feature-card-image" />
+                            <h5 class="feature-card-text Headline5">
+                              <span>Cultural Context</span>
+                            </h5>
+                            <span class="feature-card-text1">
+                              <span>Dive into linguistic nuances with cultural insights through our daily videos, showcasing how people actually converse with one another.</span>
+                            </span>
+                            <div class="feature-video-container">
+                              <div class="wrapper">
+                                <div class="wrapper-holder">
+                                  <img id="slide-20" src="carousel videos/cultural_context_cover.png" />
+                                  <video id="slide-21" controls autoplay muted>
+                                    <source src = "carousel videos/cultural_context_video1.mp4"
+                                    type = "video/mp4" /> 
+                                  </video>
+                                </div>
+                              </div>
+                              <div class="slider-nav">
+                                <a href="#slide-20"></a>
+                                <a href="#slide-21"></a>
+                              </div>
+                             </div>
+                          </div>
+            
+                            
+            
           </div>
-          <!-- End Top content -->
-            </div>
-            <div class="feature-card-container">
-              <img alt="image" src="public/05.svg" class="feature-card-image" />
-              <h5 class="feature-card-text Headline5">
-                <span>Progress Tracking</span>
-              </h5>
-              <span class="feature-card-text1">
-                <span>Monitor your language milestones and achievements.</span>
-              </span>
-              <!-- Top content -->
-          <div class="top-content">
-              <div class="container">
-
-              </div>
-          </div>
-          <!-- End Top content -->
-            </div>
-            <div class="feature-card-container">
-              <img alt="image" src="public/06.svg" class="feature-card-image" />
-              <h5 class="feature-card-text Headline5">
-                <span>Cultural Context</span>
-              </h5>
-              <span class="feature-card-text1">
-                <span>Dive into linguistic nuances with cultural insights</span>
-              </span>
-            </div>
-          </div>
+        
         </div>
+        <!-- Testimonial Section -->
         <div id="testimonies" class="home-testimonials">
           <div class="home-container08">
             <div class="home-container09">
@@ -382,7 +525,7 @@
                 alt="image"
                 src="public/quote-mark.svg"
                 class="home-image08"
-              />
+              /> 
               <h1 class="home-text13 Headline2">
                 Real Stories from Real Customers
               </h1>
@@ -483,7 +626,7 @@
         <div class="home-achievements">
           <div class="home-container14">
             <h2 class="home-text15">
-              <span>Our years of</span>
+              <span>Our Years of</span>
               <br />
               <span>Advancements</span>
             </h2>
@@ -497,7 +640,7 @@
                 <img alt="image" src="public/01.svg" class="stats-card-image" />
                 <div class="stats-card-container1">
                   <h1 class="Headline4"><span>10,000+</span></h1>
-                  <span class="Body1"><span>Audio inckuded</span></span>
+                  <span class="Body1"><span>Audio included</span></span>
                 </div>
               </div>
               <div class="stats-card-container">
@@ -546,7 +689,7 @@
               way.
             </span>
             <div class="link-icon-button-container">
-              <button class="link-icon-button-button button">
+              <button type="button" onclick="location.href='about.html'" class="link-icon-button-button button">
                 <span class="MediumLabel"><span>Get Started</span></span>
                 <svg viewBox="0 0 1024 1024" class="link-icon-button-icon">
                   <path
@@ -696,11 +839,15 @@
         </div>
       </div>
     </div>
-    
     <script>
-      document.querySelector('.menu-btn').addEventListener('click', function() {
-        document.querySelector('.home-menu').classList.toggle('show');
-      });
+      function showSidebar() {
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'flex'
+      }
+      function hideSidebar() {
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'none'
+      }
     </script>
   </body>
 </html>
