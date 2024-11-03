@@ -10,6 +10,8 @@
 .store-banner-image {
   width: 135px;
   object-fit: cover;
+  margin-left: var(--dl-space-space-halfunit);
+
 }
 .store-banner-image1 {
   width: 135px;
@@ -466,7 +468,7 @@
   display: flex;
   padding: var(--dl-space-space-doubleunit);
   z-index: 1;
-  max-width: 1110px;
+  max-width: 1410px;
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
@@ -478,13 +480,32 @@
   display: flex;
   align-items: flex-start;
   flex-direction: column;
+  margin-left: 25px;
+  margin-right: 25px;
+  
 }
 .home-text07 {
   margin-bottom: var(--dl-space-space-doubleunit);
 }
+
+.headline-description {
+  flex: 0 0 auto;
+  width: auto;
+  height: auto;
+  display: flex;
+  margin: auto;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 2rem;
+
+}
 .home-image02 {
-  width: 320px;
+  width: 100%;
   object-fit: cover;
+  margin-top: 10px;
+  margin-right: 25px;
+  margin-bottom: 10px;
+  margin-left: 25px;
 }
 .home-turquoise-cirble {
   top: 439px;
@@ -1338,5 +1359,10 @@ nav a:active {
   }
 }
 
+.sim-tutorial-video {
+  display: flex;
+  width: 100px;
+  height: 100px;
+}
 
 
