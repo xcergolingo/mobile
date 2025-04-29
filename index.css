@@ -1209,8 +1209,11 @@
 .feature-video-container {
   position: relative;
   padding: 1rem;
+  scroll-behavior: smooth;
+  scroll-snap-align: start
 
 }
+
 
 .wrapper {
   position: relative;
@@ -1227,7 +1230,10 @@
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+  transition: transform 1s ease-in-out, opacity 1s ease-in-out;
 }
+
+
 
 .slider img {
   flex:1 0 100%;
@@ -1241,7 +1247,6 @@
   flex: 1 0 100%;
   scroll-snap-align: start;
   
-
  
 }
 
@@ -1258,8 +1263,8 @@
 }
 
 .slider-nav a {
-  width: 0.5rem;
-  height: 0.5rem;
+  width: 0.6rem;
+  height: 0.6rem;
   border-radius: 50%;
   background-color: #fff;
   opacity: 0.75;
@@ -1270,6 +1275,10 @@
 
 .slider-nav a:hover {
   opacity: 1;
+}
+
+.slider-nav a.active {
+  background: #000;
 }
 
 @media screen and (max-width: 678px) {
