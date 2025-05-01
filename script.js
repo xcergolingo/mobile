@@ -82,4 +82,41 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }
     });
+
+    // Create Intersection Observer for videos
+    const videoObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            const video = entry.target;
+            
+            if (entry.isIntersecting) {
+                // Video is in viewport
+                if (video.paused) {
+                    video.play().catch(error => {
+                        // Handle autoplay restrictions
+                        console.log('Autoplay prevented:', error);
+                    });
+                }
+            } else {
+                // Video is out of viewport
+                if (!video.paused) {
+                    video.pause();
+                }
+            }
+        });
+    }, {
+        root: null, // Use viewport as root
+        rootMargin: '0px',
+        threshold: 0.5 // Video must be at least 50% visible
+    });
+
+    // Observe all videos
+    document.querySelectorAll('video').forEach(video => {
+        videoObserver.observe(video);
+    });
 });
+
+
+
+// Code to automatically play or pause videos based on viewport visibility
+// Function to check if an element is in viewport
+funct
