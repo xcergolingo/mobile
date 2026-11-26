@@ -110,7 +110,14 @@ body .gl-features article{background:#eef8ff!important}
 body .gl-trophy{width:76px;height:auto;object-fit:contain;border-radius:8px}
 @media(min-width:701px){body .gl-preview-hero{max-width:960px}}
 @media(max-width:700px){body .gl-preview-hero{width:100%!important;border-radius:0!important;margin:0 auto 12px!important}body .gl-brand>img{width:124px}body .gl-features article{grid-template-columns:minmax(0,1fr) 44%!important}body .gl-trophy{width:48px}body .gl-challenge{grid-template-columns:48px 1fr!important}}
-</style><style>body .gl-feature-icon{display:block;width:32px;height:32px;color:#0879e8;margin-bottom:5px;flex-shrink:0}body .gl-trust{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr));align-items:center;text-align:center;gap:5px!important}body .gl-trust span{display:flex;align-items:center;justify-content:center;gap:4px;line-height:1.2}body .gl-trust .gl-feature-icon{width:19px;height:19px;margin:0}@media(max-width:700px){body .gl-features .gl-feature-icon{width:27px;height:27px}body .gl-trust span{flex-direction:column;font-size:10px}body .gl-trust{padding:10px 4px!important}}</style></head>
+</style><style>body .gl-feature-icon{display:block;width:32px;height:32px;color:#0879e8;margin-bottom:5px;flex-shrink:0}body .gl-trust{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr));align-items:center;text-align:center;gap:5px!important}body .gl-trust span{display:flex;align-items:center;justify-content:center;gap:4px;line-height:1.2}body .gl-trust .gl-feature-icon{width:19px;height:19px;margin:0}@media(max-width:700px){body .gl-features .gl-feature-icon{width:27px;height:27px}body .gl-trust span{flex-direction:column;font-size:10px}body .gl-trust{padding:10px 4px!important}}</style><style>
+body .home-header-container{background:#7ed0f1!important}
+body .home-header{display:flex!important;justify-content:space-between!important;align-items:center!important;width:100%!important;max-width:1180px!important;margin:auto!important;padding:10px 18px!important;min-height:60px!important;overflow:visible!important}
+body .gl-app-wordmark{display:inline-flex!important;gap:0!important;align-items:baseline;font-family:ui-rounded,"SF Pro Rounded","Arial Rounded MT Bold",system-ui,sans-serif!important;font-weight:900!important;font-size:36px!important;letter-spacing:-2px!important;line-height:1!important;text-decoration:none!important}
+body .gl-app-wordmark .gl-logo-go{color:white!important}body .gl-app-wordmark .gl-logo-lin{color:#ff3038!important}body .gl-app-wordmark .gl-logo-end{color:#0089ed!important}
+.gl-header-menu{position:relative;margin-left:auto;flex:none}.gl-header-menu summary{display:flex;align-items:center;justify-content:center;width:44px;height:44px;color:#10244b;cursor:pointer;list-style:none}.gl-header-menu summary::-webkit-details-marker{display:none}.gl-header-menu nav{position:absolute;right:0;top:calc(100% + 8px);min-width:180px;background:white;border-radius:14px;box-shadow:0 8px 28px #10244b30;padding:8px;z-index:2000;display:grid!important}.gl-header-menu nav a{display:block;padding:12px;color:#10244b;text-decoration:none;font-weight:650}.gl-header-menu:not([open]) nav{display:none!important}
+@media(max-width:700px){body .home-header{padding:8px 14px!important}body .gl-app-wordmark{font-size:32px!important}}
+</style></head>
   
   <body>
     <div>
@@ -119,75 +126,9 @@ body .gl-trophy{width:76px;height:auto;object-fit:contain;border-radius:8px}
       <div class="home-container">
         <div data-role="Header" class="home-header-container">
           <header class="home-header">
-            <a class="gl-brand" href="index.html" aria-label="GoLingo home"><img src="public/preview-art/logo.webp" alt="GoLingo"></a>
-
-      <!--NAVIGATION BAR-->
-            <div>
-              <nav> 
-                <ul class="sidebar">
-                  <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="#highlights">Features</a></li><li><a href="#games">Games</a></li>
-                  <li><a href="#testimonies">Testimonies</a></li>
-                  <li><a href="about.html">About</a></li>
-                  
-                </ul>
-  
-                <ul>
-                  <li class="hideOnMobile"><a href="index.html">Home</a></li>
-                  <li class="hideOnMobile"><a href="#highlights">Features</a></li><li class="hideOnMobile"><a href="#games">Games</a></li>
-                  <li class="hideOnMobile"><a href="#testimonies">Testimonies</a></li>
-                  <li class="hideOnMobile"><a href="about.html">About</a></li>
-                  <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#80080"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
-  
-                </ul>
-              </nav>
-            </div>
-
-            
-          
-            
-            <!-- OLD NAV CODE
-            <div class="home-menu">
-              <span class="home-text">Home</span>
-              <a href="#features" class="home-link">Features</a>
-              <a href="#testimonies" class="home-link01">Testimony</a>
-              <a href="#about" class="home-link02">About</a>
-            </div>
-          -->
-            <a class="gl-top-app" href="https://apps.apple.com/us/app/golingo/id1194977025?uo=4">Get the app</a><div class="home-container01">
-              <div class="store-banner-store-banner">
-              <img
-                alt="image"
-                src="public/google-play-badge-200h.png"
-                class="store-banner-image"
-              />
-              <a href="https://apps.apple.com/us/app/golingo/id1194977025?uo=4" >
-              <img
-                alt="image"
-                src="public/app-store-badge-200h.png"
-                class="store-banner-image1"
-              />
-              </a>
-              </div>
-            </div>
-          
-            <!-- OLD BURGER MENU CODE
-            <div data-role="BurgerMenu" class="home-burger-menu">
-              <svg viewBox="0 0 1024 1024" class="home-menu1">
-                <path
-                  d="M810.667 725.333h-597.333c-47.061 0-85.333 38.272-85.333 85.333s38.272 85.333 85.333 85.333h597.333c47.061 0 85.333-38.272 85.333-85.333s-38.272-85.333-85.333-85.333z"
-                ></path>
-                <path
-                  d="M810.667 426.667h-597.333c-47.061 0-85.333 38.272-85.333 85.333s38.272 85.333 85.333 85.333h597.333c47.061 0 85.333-38.272 85.333-85.333s-38.272-85.333-85.333-85.333z"
-                ></path>
-                <path
-                  d="M810.667 128h-597.333c-47.061 0-85.333 38.272-85.333 85.333s38.272 85.333 85.333 85.333h597.333c47.061 0 85.333-38.272 85.333-85.333s-38.272-85.333-85.333-85.333z"
-                ></path>
-              </svg>
-            </div>
-          -->
-          </header>
+            <a class="gl-brand gl-app-wordmark" href="index.html" aria-label="GoLingo home"><span class="gl-logo-go">Go</span><span class="gl-logo-lin">Lin</span><span class="gl-logo-end">go</span></a>
+<details class="gl-header-menu"><summary aria-label="Open navigation menu"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg></summary><nav aria-label="Main navigation"><a href="index.html">Home</a><a href="#highlights">Features</a><a href="#games">Games</a><a href="about.html">About</a></nav></details>
+</header>
           <div data-role="MobileMenu" class="home-mobile-menu">
             <div class="home-top">
               <div class="home-logo1">
@@ -1219,5 +1160,5 @@ body .gl-trophy{width:76px;height:auto;object-fit:contain;border-radius:8px}
       });
     </script>
    
-  </body>
+  <script>document.querySelectorAll('.gl-header-menu nav a').forEach(a=>a.addEventListener('click',()=>{a.closest('details').open=false}));document.addEventListener('click',e=>{const m=document.querySelector('.gl-header-menu');if(m&&!m.contains(e.target))m.open=false});</script></body>
 </html>
